@@ -1,10 +1,20 @@
 <?php
-echo "A Rare Gift"; // Trent PLS VAATA JJK
-$name = "Artur"; // Parim inimene eales
-$age = 30; // Arturi uus vanus
-echo $age;
-$age = $age * 2 * 3 * 4 * 5 * 6 * 7;
-echo $age;
-
-echo 67 + 69; // Annab selle numbri väärtuse heheheh
+$test = 10;
+$test = 3.1;
+$test = "Hello";
+$test = "😂";
+$test = true;
+$test = false;
+$test = null;
+$lol;
+var_dump($test);
+var_dump($lol);
+$test = [1, 2, "three", true];
+var_dump($test);
+$test = new stdClass();
+$test->name = "John";
+var_dump($test);
+$num1 = 100000000;
+$num2 = "67";
+var_dump($num1 === $num2);
 ?>
