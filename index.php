@@ -1,27 +1,35 @@
 <?php
-$name = 'Artur';
+$name = 'Kaspar';
+$coinFlip = rand(0,1);
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-        <h1>Welcome <?=$name?> to my website</h1>
+    <h1>Hello <?=$name?>!</h1>
     <?php if($coinFlip): ?>
         <h1>Kull</h1>
-        <?php else: ?>
-            <h1>Kiri</h1>
-        <?php endif ?>
- 
+    <?php else: ?>
+        <h1>Kiri</h1>
+    <?php endif ?>
+    
     <ul>
-        <?php for($i=0;$i=10;$i++): ?>
+        <?php for($i=0;$i<10;$i++): ?>
             <li><?=$i?></li>
         <?php endfor ?>
-        </ul>
+    </ul>
 </body>
 </html>
+$sum = 0;
+
+for($i=1;$i<1000;$i++) {
+   if($i%3 === 0 || $i%5 === 0) {
+        $sum+=$i;
+   } 
+}
+var_dump($sum);
