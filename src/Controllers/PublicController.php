@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 namespace App\Controllers;
 
@@ -70,4 +71,9 @@ class PublicController
     public function forms() {
         view('forms');
     }
+=======
+namespace App\Controllers;
+class PublicController {
+    
+>>>>>>> 0f309e55505a169c506c333a5b2ee0637f1023dc
 }

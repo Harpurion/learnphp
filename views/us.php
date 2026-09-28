@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 <?php
 ?>
 
+=======
+>>>>>>> 0f309e55505a169c506c333a5b2ee0637f1023dc
 <?php include __DIR__ . '/partials/header.php'; ?>
 
     <main class="container">
