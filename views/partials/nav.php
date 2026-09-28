@@ -7,13 +7,7 @@
           <div class="col-4 text-center">
             <a
               class="blog-header-logo text-body-emphasis text-decoration-none"
-<<<<<<< HEAD
               href="#">Large</a>
-=======
-              href="#"
-              >Large</a
-            >
->>>>>>> 0f309e55505a169c506c333a5b2ee0637f1023dc
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="link-secondary" href="#" aria-label="Search">
@@ -28,12 +22,7 @@
                 stroke-width="2"
                 class="mx-3"
                 role="img"
-<<<<<<< HEAD
                 viewBox="0 0 24 24">
-=======
-                viewBox="0 0 24 24"
-              >
->>>>>>> 0f309e55505a169c506c333a5b2ee0637f1023dc
                 <title>Search</title>
                 <circle cx="10.5" cy="10.5" r="7.5"></circle>
                 <path d="M21 21l-5.2-5.2"></path>
@@ -45,21 +34,10 @@
       </header>
       <div class="nav-scroller py-1 mb-3 border-bottom">
         <nav class="nav nav-underline justify-content-between">
-<<<<<<< HEAD
           <a class="nav-item nav-link link-body-emphasis active" href="/">World</a>
           <a class="nav-item nav-link link-body-emphasis" href="/us">U.S.</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Technology</a>
           <a class="nav-item nav-link link-body-emphasis" href="/forms">Forms</a>
-=======
-          <a class="nav-item nav-link link-body-emphasis active" href="#"
-            >World</a
-          >
-          <a class="nav-item nav-link link-body-emphasis" href="#">U.S.</a>
-          <a class="nav-item nav-link link-body-emphasis" href="#"
-            >Technology</a
-          >
-          <a class="nav-item nav-link link-body-emphasis" href="#">Design</a>
->>>>>>> 0f309e55505a169c506c333a5b2ee0637f1023dc
           <a class="nav-item nav-link link-body-emphasis" href="#">Culture</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Business</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Politics</a>
