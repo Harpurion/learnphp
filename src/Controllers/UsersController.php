@@ -66,6 +66,17 @@ class UsersController
         }
     }
 
+    public function confirmDelete()
+    {
+        $user = $this->findUser();
+        if ($user) {
+            $title = 'Delete user';
+            view('users/delete', compact('title', 'user'));
+        } else {
+            echo 404;
+        }
+    }
+
     private function findUser()
     {
         return User::find((int) ($_GET['id'] ?? 0));

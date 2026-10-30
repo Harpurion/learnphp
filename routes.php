@@ -27,7 +27,8 @@ Router::get('/admin/users', [UsersController::class, 'index']);
 Router::get('/admin/users/view', [UsersController::class, 'view']);
 Router::get('/admin/users/edit', [UsersController::class, 'edit']);
 Router::post('/admin/users/edit', [UsersController::class, 'update']);
-Router::get('/admin/users/delete', [UsersController::class, 'delete']);
+Router::get('/admin/users/delete', [UsersController::class, 'confirmDelete']);
+Router::post('/admin/users/delete', [UsersController::class, 'delete']);
 
 
 Router::get('/register', [AuthController::class, 'registerForm']);
