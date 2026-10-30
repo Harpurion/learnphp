@@ -9,7 +9,7 @@
               class="blog-header-logo text-body-emphasis text-decoration-none"
               href="#">Large</a>
           </div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
+          <div class="col-4 d-flex justify-content-end align-items-center gap-2">
             <a class="link-secondary" href="#" aria-label="Search">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,19 @@
                 <path d="M21 21l-5.2-5.2"></path>
               </svg>
             </a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+            <?php if (auth()): ?>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <?= auth()->name ?>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                </ul>
+              </div>
+            <?php else: ?>
+              <a class="btn btn-sm btn-outline-secondary" href="/register">Sign up</a>
+              <a class="btn btn-sm btn-outline-primary" href="/login">Login</a>
+            <?php endif ?>
           </div>
         </div>
       </header>
@@ -36,9 +48,9 @@
         <nav class="nav nav-underline justify-content-between">
           <a class="nav-item nav-link link-body-emphasis active" href="/">World</a>
           <a class="nav-item nav-link link-body-emphasis" href="/us">U.S.</a>
-          <a class="nav-item nav-link link-body-emphasis" href="/tech">Technology</a>
+          <a class="nav-item nav-link link-body-emphasis" href="#">Technology</a>
           <a class="nav-item nav-link link-body-emphasis" href="/forms">Forms</a>
-          <a class="nav-item nav-link link-body-emphasis" href="#">Culture</a>
+          <a class="nav-item nav-link link-body-emphasis" href="/admin/articles">Articles</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Business</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Politics</a>
           <a class="nav-item nav-link link-body-emphasis" href="#">Opinion</a>
