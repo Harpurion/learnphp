@@ -24,6 +24,13 @@ class PublicController
         view('us', compact('title', 'articles'));
     }
 
+    public function tech()
+    {
+        $articles = Article::all();
+        $title = 'Technology';
+        view('tech', compact('title', 'articles'));
+    }
+
     public function forms()
     {
         view('forms');
